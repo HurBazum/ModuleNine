@@ -86,6 +86,10 @@ namespace ModuleNine
                     if (Console.ReadKey().Key == ConsoleKey.Backspace)
                     {
                         Console.Clear();
+                        foreach(string s in surNames)
+                        {
+                            Console.WriteLine(s);
+                        }
                     }
                 }
             }
@@ -97,7 +101,7 @@ namespace ModuleNine
         /// <param name="strings">массив строк</param>
         /// <param name="order">порядок сортировки</param>
         /// <returns>отсортированный массив</returns>
-        public static string[] StringSorter(string[] strings, sbyte order)
+        public static void StringSorter(string[] strings, sbyte order)
         {
             string temp = string.Empty;
             // А-Я
@@ -132,7 +136,7 @@ namespace ModuleNine
                     }
                 }
             }
-            return strings;
+            //return strings;
         }
 
         /// <summary>

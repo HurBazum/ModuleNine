@@ -3,7 +3,7 @@ namespace ModuleNine
 {
     class Sorter
     {
-        public delegate string[] SortStrings(string[] strings, sbyte order);
+        public delegate void SortStrings(string[] strings, sbyte order);
         public event SortStrings SortStringsEvent;
         public void SortString(string[] strings)
         {
